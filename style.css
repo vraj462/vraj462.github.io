@@ -1,13 +1,13 @@
 body {
   margin: 0;
-  padding-Left: 0;
+  padding-left: 0;
   background-color: #1abc9c;
 }
 
 .search_box{
   position: absolute;
   top: 50%;
-  Left: 50%;
+  left: 50%;
   transform: translate (-50%, -50%);
   background-color: #2f3640;
   height:40px;
