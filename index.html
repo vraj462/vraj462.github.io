@@ -25,11 +25,14 @@
   <!-- Load icon library -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <div id="wrap">
-    <form action="" autocomplete="on">
-    <input id="search" name="search" type="text" placeholder="What're we looking for ?"><input id="search_submit" value="Rechercher" type="submit">
-    </form>
+  div class="search-wrapper">
+      <div class="input-holder">
+          <input type="text" class="search-input" placeholder="Type to search" />
+          <button class="search-icon" onclick="searchToggle(this, event);"><span></span></button>
+      </div>
+      <span class="close" onclick="searchToggle(this, event);"></span>
   </div>
+
 
   <!-- The form -->
   <form class="example" action="action_page.php">
