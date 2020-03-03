@@ -1,19 +1,55 @@
 
 <!DOCTYPE html>
 <html>
+<title>
+  Vraj's Yelp
+</title>
+
 <head>
-  <title> Vraj's Website </title>
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+  <hi style = "font-family:Brush Script MT;font-size:35px;font-style:italic;">
+       <u>Welcome to Vraj's Yelp</u>
+</hi>
 </head>
 
-<body>
-  <div class="search_box">
-    <input class="input_box" type="text" name="" placeholder="Search">
-    <a class="btn" href="#">
-      <i class="fas fa-search"></i>
-    </a>
+
+
+<style>
+  body {
+    background-image: url("background.png");
+    background-color: #cccccc;
+    color:#fff;
+    text-align:center;
+  }
+
+</style>
+<!-- Load icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="search-wrapper">
+  <div class="input-holder">
+      <input type="text" class="search-input" placeholder="Type to search" />
+      <button class="search-icon" onclick="searchToggle(this, event);"><span></span></button>
   </div>
-</body>
+  <span class="close" onclick="searchToggle(this, event);"></span>
+</div>
+
+
+<!-- The form -->
+<form class="example" action="action_page.php">
+  <input type="text" placeholder="Search by Location..." name="search">
+  <button type="submit"><i class="fa fa-search"></i></button>
+</form>
+
+<!-- The form -->
+<form class="example" action="action_page.php">
+  <input type="text" placeholder="Search by Price..." name="search">
+  <button type="submit"><i class="fa fa-search"></i></button>
+</form>
+
+<!-- The form -->
+<form class="example" action="action_page.php">
+  <input type="text" placeholder="Search by Rating..." name="search">
+  <button type="submit"><i class="fa fa-search"></i></button>
+</form>
 
 </html>
