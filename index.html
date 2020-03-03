@@ -12,21 +12,24 @@
 </head>
 
 
-<head>
-	<meta charset="UTF-8">
-	<title>Search Box Design</title>
-	<link rel="stylesheet" href="styles.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
-</head>
-<body>
+
+<style>
+  body {
+    background-image: url("background.png");
+    background-color: #cccccc;
+    color:#fff;
+    text-align:center;
+  }
+
+</style>
+<!-- Load icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
+<!-- The form -->
+<form class="example" action="action_page.php">
+  <input type="text" placeholder="Search by Location..." name="search">
+  <button type="submit"><i class="fa fa-search"></i></button>
+</form>
 
-<div class="wrapper">
-	<input type="text" class="input"
-	placeholder="What are you looking for?">
-	<div class="searchbtn"><i class="fas fa-search"></i></div>
-</div>
-
-</body>
 </html>
