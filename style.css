@@ -1,54 +1,59 @@
-@import url('https://fonts.googleapis.com/css?family=Comfortaa');
-
-*{
-	margin: 0;
-	padding: 0;
-	outline: none;
-	box-sizing: border-box;
-	font-family: 'Comfortaa', cursive;
+body {
+ margin: 0;
+ padding: 0;
+ background: #e84118;
 }
 
-body{
-	background: url('https://i.imgur.com/NMnbn2s.jpg') no-repeat center;
-	background-size: cover;
-	width: 100%;
-	height: 100vh;
+.buscar-caja {
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ background: #2f3640;
+ height: 40px;
+ border-radius: 40px;
+ padding: 10px;
 }
 
-.wrapper{
-	position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: rgba(0, 0, 0,0.6);
-    max-width: 550px;
-    width: 100%;
-    padding: 15px;
-    display: flex;
-    justify-content: space-between;
-    border-radius: 5px;
+.buscar-caja:hover > .buscar-txt {
+ width: 240px;
+ padding: 0 6px;
 }
 
-.wrapper .input {
-    width: 85%;
-    padding: 15px 20px;
-    border: none;
-    border-radius: 5px;
-    font-weight: bold;
+.buscar-caja:hover > .buscar-btn {
+ background: white;
+ color: black;
 }
 
-.searchbtn {
-    background: #ffec00;
-    width: 10%;
-    border-radius: 5px;
-    position: relative;
-    cursor: pointer;
+.buscar-btn {
+ color: #e84118;
+ float: right;
+ width: 40px;
+ height: 40px;
+ border-radius: 50%;
+ background: #2f3640;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ transition: 0.4s;
+ color: white;
+ cursor: pointer;
 }
 
-.searchbtn .fas{
-	position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 18px;
+.buscar-btn > i {
+ font-size: 30px;
+}
+
+.buscar-txt {
+ border: none;
+ background: none;
+ outline: none;
+ float: left;
+ padding: 0;
+ color: white;
+ font-size: 16px;
+ transition: 0.4s;
+ line-height: 40px;
+ width: 0px;
+ font-weight: bold;
 }
