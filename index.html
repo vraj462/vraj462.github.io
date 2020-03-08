@@ -24,15 +24,15 @@
     text-align:center;
   }
 
-</style>
-<!-- Load icon library -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-
-$(".btn").click(function(){
-  $(".input").toggleClass("active").focus;
-  $(this).toggleClass("animate");
-  $(".input").val("");
-});
+  <div class="wrapper">
+    <div class="search-box">
+       <input type="text" placeholder="Search" class="input">
+       <div class="btn">
+         <i class="fa fa-search" aria-hidden="true"></i>
+       </div>
+    </div>
+  </div>
 
 </html>
